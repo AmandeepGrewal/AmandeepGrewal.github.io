@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Aman Grewal: Portfolio</title>
+        <meta name="viewport" content="width=device-width; initial-scale=1">
+        <meta name="keywords" content="Amandeep,Grewal,web developer,Edmonton,HTML,CSS,JavaScript,JQuery,SASS,SCSS,LESS,experience,responsive web design" />
+        <meta name="description" content="Front end web developer in Edmonton for digital marketing">
+        <meta name="author" content="Amandeep kaur Grewal">
+
+
+        <!--favicons-->
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+        <!--Scripts-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" async></script>
+        <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.2.3/firebase.js" async></script>
+        <script type="text/javascript" src="scripts/index.js" async></script>
+        <!--Styles-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Clicker+Script|Lato" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/index.css">
+
+
+
+
+    </head>
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="top">
+            <div class="bar" id="myNavbar">
+                <a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#home" class="bar-item button">HOME</a>
+                <a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
+                <a href="#portfolio" class="bar-item button hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+                <a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+            </div>
+            <!-- Navbar on small screens -->
+            <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+                <a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+                <a href="#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+                <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+            </div>
+        </div>
+
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 display-container opacity-min" id="home">
+            <div class="display-middle" style="white-space:nowrap;">
+                <div class="center padding-xlarge xxxlarge animate-opacity myName"><strong>Aman Grewal</strong></div>
+                <div class="hide-small center animate-opacity">web designer &amp; developer</div>
+
+            </div>
+        </div>
+        <!-- Container (About Section) -->
+        <div class="content container padding-64" id="about">
+            <h3 class="center">ABOUT ME</h3>
+            <p class="center"><em>An Introduction</em></p>
+            <p class="indent justify">Hi. My name is Aman. I am a front end web developer who is fond of coding. I am an adept multitasker capable of bringing simultaneous web page creation and repair projects to completion with full accuracy and efficiency. I enjoy designing responsive web pages along with learning new 'technical tools' for updating my skills. </p>
+
+            <p class="large center padding-16">Im really good at&#58;</p>
+            <p class="wide"><i class="fa fa-file-code-o"></i>HTML</p>
+            <div class="light-grey">
+                <div class="container padding-small dark-grey center" style="width:90%">90&#37;</div>
+            </div>
+            <p class="wide"><i class="fa fa-file-code-o"></i>CSS (LESS and SASS)</p>
+            <div class="light-grey">
+                <div class="container padding-small dark-grey center" style="width:85%">85&#37;</div>
+            </div>
+            <p class="wide"><i class="fa fa-file-code-o"></i>Javascript</p>
+            <div class="light-grey">
+                <div class="container padding-small dark-grey center" style="width:85%">85&#37;</div>
+            </div>
+
+            <p class="wide"><i class="fa fa-file-code-o"></i>JQuery</p>
+            <div class="light-grey">
+                <div class="container padding-small dark-grey center" style="width:80%">80&#37;</div>
+            </div>
+
+            <p class="wide"><i class="fa fa-photo"></i>ReactJS</p>
+            <div class="light-grey">
+                <div class="container padding-small dark-grey center" style="width:75%">75&#37;</div>
+            </div>
+        </div><!--Ends main big container-->
+        <!-- Second Parallax Image with Portfolio Text -->
+        <div class="bgimg-2 display-container opacity-min">
+            <div class="display-middle">
+                <span class="xxlarge text-dark-grey wide">PORTFOLIO</span>
+            </div>
+        </div>
+        <!-- Container (Portfolio Section) -->
+        <div class="content container padding-64" id="portfolio">
+            <h3 class="center">MY WORK</h3>
+            <p class="center"><em>Here are some of my latest creations &hellip;</em></p><br>
+
+            <!-- Project 1: Weather Window-->
+            <div class="orangeCard white margin-64">
+                <img src="images/weather.jpg" alt="Weather Window" title="Weather Window - a local weather app" style="width:100%">
+                <div class="container">
+                    <h3><b>Weather Window</b></h3>
+                    <h5>A local weather App</h5>
+                </div>
+                <div class="container">
+                    <p>This app is designed to see the local weather from a location. The viewer can see a different background image depending on the weather.</p>
+                    <p>Uses:  freeCodeCamp Weather API, JSON, jQuery, AJAX</p>
+
+                </div>
+                <div class="container center ">
+                    <a href="https://s.codepen.io/Aman-Grewal/debug/xqWjvw" class="button dark-grey round padding-large large margin-bottom" title="local weather app" style="letter-spacing:1px" target="_blank"> View </a>
+                </div>
+            </div><!-- Project Ends -->
+            <!-- Project 2: Quoteworthy Words -->
+            <div class="parrotGreenCard white margin-64">
+                <img src="images/randomQuote.jpg" alt="Quoteworthy Words" title="Quoteworthy Words - a random quote generator" style="width:100%">
+                <div class="container">
+                    <h3><b>Quoteworthy Words</b></h3>
+                    <h5> A random quote generator</h5>
+                </div>
+                <div class="container">
+                    <p>This app is designed to generate random quotes and share them on Twitter.</p>
+                    <p>Uses: jQuery, Bootstrap, SCSS, CSS3 Animaton </p>
+                </div>
+                <div class="container center ">
+                    <a href="https://s.codepen.io/Aman-Grewal/debug/VpMGmy" class="button dark-grey round padding-large large margin-bottom" title="random quote generator" style="letter-spacing:1px" target="_blank"> View </a>
+                </div>
+            </div><!-- Project Ends -->
+            <!-- Project 3 : Wikipedia Viewer-->
+            <div class="pinkCard white margin-64">
+                <img src="images/wikipedia.jpg" alt="Wikipedia Viewer" title="Wikipedia Viewer - A WikiPedia Search App " style="width:100%">
+                <div class="container">
+                    <h3><b>Wikipedia Viewer</b></h3>
+                    <h5> A Wikipedia Search App</h5>
+                </div>
+                <div class="container">
+                    <p>This app searches Wikipedia entries for the search item mentioned in search box and displays the resulting Wikipedia entries. One can also look for a random Wikipedia article.</p>
+                    <p>Uses: Wikipedia's API, JSON, jQuery, AJAX</p>
+
+                </div>
+                <div class="container center ">
+                    <a href="https://s.codepen.io/Aman-Grewal/debug/EmVVGO" class="button dark-grey round padding-large large margin-bottom" title="wikipedia search app" style="letter-spacing:1px" target="_blank"> View </a>
+                </div>
+            </div><!-- Project Ends -->
+            <!-- Project 4 : Smart Bird-->
+            <div class="blueCard white margin-64">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1106853/bird.jpg" alt="Smart Bird" title="Smart Bird: a simple REACT app" style="width:100%">
+                <div class="container">
+                    <h3><b>Smart Bird</b></h3>
+                    <h5> just for fun</h5>
+                </div>
+                <div class="container">
+                    <p>
+                        An outcome of playing with ReactJS. <i class="fa fa-smile-o" aria-hidden="true" style="color:#52C8FE"></i>
+                    </p>
+                    <p>Uses: React, JSX</p>
+
+                </div>
+                <div class="container center ">
+                    <a href="https://s.codepen.io/Aman-Grewal/debug/MEZvym" class="button dark-grey round padding-large large margin-bottom" title="a simple REACT app" style="letter-spacing:1px" target="_blank"> View </a>
+                </div>
+            </div><!-- Project Ends -->
+
+        </div><!--Ends container for portfolio section-->
+        <!-- Third Parallax Image with contact Text -->
+        <div class="bgimg-3 display-container opacity-min">
+            <div class="display-middle">
+                <span class="xxlarge text-light-grey wide">CONTACT</span>
+            </div>
+        </div><!--Ends contact bgimg part-->
+        <!--start contact->
+    <!-- The Contact Section -->
+        <div class="container content padding-64" style="max-width:800px" id="contact">
+            <h3 class="wide center">CONTACT ME</h3>
+            <p class="opacity center"><i>I'd love your feedback&#33;</i></p>
+            <div class="row padding-32">
+                <div class="col m8 large margin-top">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Edmonton, AB, CA<br>
+                    <i class="fa fa-phone" style="width:30px"></i> Phone&#58; 780&ndash;904&ndash;1307<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email&#58; grewal.grewal.aman&#064;gmail.com<br>
+                </div>
+                <div class="col m4">
+                    <form method="post" name="contactForm">
+
+                        <div class="row margin-bottom">
+                            <input class="input border" type="text" placeholder="Name" id="name" required name="Name">
+                        </div>
+                        <div class="row margin-bottom">
+                            <input class="input border" type="email" placeholder="Email" id="email" required name="Email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
+                        </div>
+                        <div class="row ">
+                            <input class="input border" type="text" placeholder="Message" id="msg" required name="Message">
+                        </div>
+                        <button class="button black section right addValue" type="submit"> <i class="fa fa-paper-plane"></i>&nbsp; SEND</button>
+                    </form>
+
+                    <div class="row-padding" id="thanks" style="display:none;">
+                        <div class="padding pale-green display-container">
+                            <span onclick="this.parentElement.style.display='none';" class="button pale-green large display-topright">&times;</span>
+                            <h4>Thank you for getting in touch!</h4>
+                            <p>I will get back to you shortly. Have a great time!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--Ends contact-->
+
+
+
+        <!-- Footer -->
+        <footer class="center black padding-64 opacity hover-opacity-off">
+            <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+            <div class="xlarge section">
+                <a href="https://www.freecodecamp.com/aman-grewal" alt="The great freecodecamp" target="_blank"><i class="fa fa-free-code-camp hover-text-white"></i></a>
+
+                <a href="https://codepen.io/Aman-Grewal/#" alt="CodePen Projects" target="_blank"><i class="fa fa-codepen hover-text-white"></i></a>
+            </div>
+            <p>Designed by <a href="https://s.codepen.io/Aman-Grewal/debug/jBEwbO" title="Aman Grewal" target="_blank" class="hover-text-light-blue">Aman Grewal</a></p>
+        </footer>
+    </body>
+</html>
