@@ -25,7 +25,7 @@
 
 
     </head>
-    <body>
+    <body itemscope itemtype="http://schema.org/Person">
         <!-- Navbar (sit on top) -->
         <div class="top">
             <div class="bar" id="myNavbar">
@@ -48,16 +48,16 @@
         <!-- First Parallax Image with Logo Text -->
         <div class="bgimg-1 display-container opacity-min" id="home">
             <div class="display-middle" style="white-space:nowrap;">
-                <div class="center padding-xlarge xxxlarge animate-opacity myName"><strong>Aman Grewal</strong></div>
+                <div class="center padding-xlarge xxxlarge animate-opacity myName"><strong itemprop="name">Aman Grewal</strong></div>
                 <div class="hide-small center animate-opacity">web designer &amp; developer</div>
 
             </div>
         </div>
-        <!-- Container (About Section) -->
-        <div class="content container padding-64" id="about">
+        <!-- Container (About Section), contain microdata -->
+        <div class="content container padding-64" id="about" >
             <h3 class="center">ABOUT ME</h3>
             <p class="center"><em>An Introduction</em></p>
-            <p class="indent justify">Hi. My name is Aman. I am a front end web developer who is fond of coding. I am an adept multitasker capable of bringing simultaneous web page creation and repair projects to completion with full accuracy and efficiency. I enjoy designing responsive web pages along with learning new 'technical tools' for updating my skills. </p>
+            <p class="indent justify">Hi. My name is Aman. I am a <span itemprop="jobTitle">front end web developer</span> who is fond of coding. I am an adept multitasker capable of bringing simultaneous web page creation and repair projects to completion with full accuracy and efficiency. I enjoy designing responsive web pages along with learning new 'technical tools' for updating my skills. </p>
 
             <p class="large center padding-16">Im really good at&#58;</p>
             <p class="wide"><i class="fa fa-file-code-o"></i>HTML</p>
@@ -174,10 +174,12 @@
             <p class="opacity center"><i>I'd love your feedback&#33;</i></p>
             <div class="row padding-32">
                 <div class="col m8 large margin-top">
-                    <i class="fa fa-map-marker" style="width:30px"></i> Edmonton, AB, CA<br>
-                    <i class="fa fa-phone" style="width:30px"></i> Phone&#58; 780&ndash;904&ndash;1307<br>
-                    <i class="fa fa-envelope" style="width:30px"> </i> Email&#58; grewal.grewal.aman&#064;gmail.com<br>
-                </div>
+                    <i class="fa fa-map-marker" style="width:30px"></i> <span itemprop="homeLocation">Edmonton, AB, CA</span><br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone&#58; <span itemprop="telephone">
+        780&ndash;904&ndash;1307
+    </span><br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email&#58; <span itemprop="email">grewal.grewal.aman&#064;gmail.com</span><br>
+</div>
                 <div class="col m4">
                     <form method="post" name="contactForm">
 
@@ -212,9 +214,9 @@
         <footer class="center black padding-64 opacity hover-opacity-off">
             <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
             <div class="xlarge section">
-                <a href="https://www.freecodecamp.com/aman-grewal" alt="See the projects on freecodecamp" title="FreeCodeCamp" target="_blank"><i class="fa fa-free-code-camp hover-text-white"></i></a>
-
-                <a href="https://codepen.io/Aman-Grewal/#" alt="See the projects on CodePen" title="CodePen" target="_blank"><i class="fa fa-codepen hover-text-white"></i></a>
+                <a href="https://www.freecodecamp.com/aman-grewal" itemprop="url" alt="See the projects on freecodecamp" title="FreeCodeCamp" target="_blank"><i class="fa fa-free-code-camp hover-text-white"></i></a>
+                <!--Insert Github life-->
+                <a href="https://codepen.io/Aman-Grewal/#" itemprop="url" alt="See the projects on CodePen" title="CodePen" target="_blank"><i class="fa fa-codepen hover-text-white"></i></a>
             </div>
             <p>Designed by <a href="contactAman.vcf" alt="contact details of Amandeep" target="_blank" class="hover-text-light-blue">Aman Grewal</a></p>
         </footer>
